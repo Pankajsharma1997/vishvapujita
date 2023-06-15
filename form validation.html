@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript form Validation </title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    
+        <div class="container"> 
+            <div class="title">Registration</div>
+            <form action="#" onsubmit="return validate()"> 
+            <div class="user-details"> 
+                <div class="input-box"> 
+                    <span class="details">Full Name</span>
+                    <input type ="text" placeholder="Enter Full name" id="user" name="Fullname">
+                    </div>
+
+                    <div class="input-box"> 
+                        <span class="details">Email</span>  
+                        <input type ="email" placeholder="Email address" name="user-email" id="email">
+                    </div>
+
+                    <div class="input-box"> 
+                        <span class="details">Phone Number</span>  
+                        <input type ="text" placeholder="Enter Phone Number" name="phone-number" id="phone">
+                    </div>
+
+                    <div class="input-box"> 
+                        <span class="details">Username</span>  
+                        <input type ="text" placeholder="Enter Username" name="username" id="user1">
+                    </div>
+
+                   <div class="input-box" > 
+                    <span class="details">Password</span>  
+                    <input type="password" placeholder="Enter password" name="password" id="password">
+                   </div>
+
+                   <div class="input-box">
+                    <span class="details">Confirm Password</span>  
+                    <input type ="password" placeholder="Confirm password" name="password" id="confirmpassword"/>
+                   </div>
+
+                   <!-- Radio button for gender -->
+                   <div class="gender">
+                    <label for="gender"> Gender:- </label>
+                        <input type="radio" name="gender" value ="male">Male
+                        <input type="radio" name="gender" value ="female">Female
+                    </div>
+
+                    <!-- Dropdown for Select option -->
+                    <div> 
+                        <label for ="Register "> Register as: </label>
+                        <select name = "Register" id ="register"> 
+                            <option value="Register as Buyer/vender"> Register as </option>
+                            <option  value="Buyer">   Buyer  </option>
+                            <option value="Vender">  Vender </option>
+                        </select>
+
+                    </div>
+
+                   <div class="button"> 
+                    <input type ="submit">
+                </div>
+
+                <div class="button">
+                    <input type="reset" name="" id="" value="RESET">
+                </div>
+    
+                    
+            </div>
+        </div>
+    </form>
+</body>
+<script src="form.js">
+</script> 
+</html>
